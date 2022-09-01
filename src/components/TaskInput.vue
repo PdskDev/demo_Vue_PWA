@@ -3,7 +3,13 @@
     <div class="container tasker">
       <strong>My task is: {{ task }}</strong>
       <label for="task">
-        <input type="text" v-model="task" class="taskInput" id="task" />
+        <input
+          type="text"
+          v-bind:value="task"
+          @input="task = $event.target.value"
+          class="taskInput"
+          id="task"
+        />
       </label>
       <button v-on:click="addTask">Add Task</button>
     </div>
