@@ -1,8 +1,8 @@
 <template>
   <div class="cardBox">
-    <div class="container">
+    <div class="container tasker">
       <h2>Today is:</h2>
-      <h3>{{ getCurrentDate }}</h3>
+      <h2>{{ getCurrentDate }}</h2>
     </div>
   </div>
 </template>
@@ -27,3 +27,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.tasker {
+  margin: 20px;
+}
+</style>

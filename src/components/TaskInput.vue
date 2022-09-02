@@ -1,7 +1,7 @@
 <template>
   <div class="cardBox">
     <div class="container tasker">
-      <strong>My task is: {{ task }}</strong>
+      <h2>My task is: {{ task }}</h2>
       <label for="task">
         <input
           type="text"
